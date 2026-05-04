@@ -40,7 +40,7 @@ body:
     id: console
     attributes:
       label: Console model
-      description: You can see it on the console sticker or inside OSDSYS (press triangle on main menu)
+      description: you can see it on the console sticker or inside OSDSYS (press triangle on main menú)
       placeholder: SCPH-?????
     validations:
       required: true
@@ -50,7 +50,7 @@ body:
     attributes:
       label: "OPL version / revision"
       description: "you can see it on the About option from the settings menu (press start in game list)"
-      placeholder: "e.g. OPL Beta 1.2.0 2241 (Note: 'Latest Version' is not a valid answer)"
+      placeholder: "eg: OPL stable 1.0.0 | OPL beta 1.1.0 1732"
     validations:
       required: true
 
@@ -65,9 +65,7 @@ body:
         - HDD
         - iLink
         - MX4SIO
-    validations:
-      required: true
-
+        
   - type: dropdown
     id: extra-features
     attributes:
@@ -77,17 +75,15 @@ body:
         - VMC
         - PADEMU
         - GSM
-    validations:
-      required: true
 
   - type: input
     id: compat-modes
     attributes:
       label: Compatibility modes
-      description: Which compatibility modes were tested?
-      placeholder: "e.g. mode 6, 6+3, 1+3+6..."
+      description: Which compatibility modes were tested.
+      placeholder: "eg: mode 6, 6+3, 1+3+6..."
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: context-and-data
@@ -96,4 +92,4 @@ body:
       description: Information about affected games (Game name, [Game ID], link to redump.org) and expected behavior
       placeholder: "game affected is Kingdom Hearts: II Final Mix [SLPM_666.75], http://redump.org/disc/7733/"
     validations:
-      required: true
+      required: false
