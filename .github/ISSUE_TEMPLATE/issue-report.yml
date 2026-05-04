@@ -60,6 +60,7 @@ body:
       label: "In which device(s) have you experienced this issue?"
       multiple: true
       options:
+        - No
         - USB
         - SMB
         - HDD
@@ -72,6 +73,7 @@ body:
       label: "Which extra features are enabled?"
       multiple: true
       options:
+        - No
         - VMC
         - PADEMU
         - GSM
