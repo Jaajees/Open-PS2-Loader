@@ -66,6 +66,8 @@ body:
         - HDD
         - iLink
         - MX4SIO
+    validations:
+      required: true
         
   - type: dropdown
     id: extra-features
@@ -77,6 +79,8 @@ body:
         - VMC
         - PADEMU
         - GSM
+    validations:
+      required: true
 
   - type: input
     id: compat-modes
@@ -85,7 +89,7 @@ body:
       description: Which compatibility modes were tested.
       placeholder: "eg: mode 6, 6+3, 1+3+6..."
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: context-and-data
@@ -94,4 +98,4 @@ body:
       description: Information about affected games (Game name, [Game ID], link to redump.org) and expected behavior
       placeholder: "game affected is Kingdom Hearts: II Final Mix [SLPM_666.75], http://redump.org/disc/7733/"
     validations:
-      required: false
+      required: true
